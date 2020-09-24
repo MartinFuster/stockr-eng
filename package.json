@@ -1,0 +1,27 @@
+{
+  "name": "stockr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinFuster/stockr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinFuster/stockr/issues"
+  },
+  "homepage": "https://github.com/MartinFuster/stockr#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "firebase": "^7.17.1",
+    "universal-cookie": "^4.0.3"
+  }
+}

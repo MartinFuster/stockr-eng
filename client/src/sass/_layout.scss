@@ -1,0 +1,279 @@
+.products {
+  display: flex;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.sidenav {
+  display: flex;
+  flex: 0 0 12%;
+  min-height: 100vh;
+  width: 15vw;
+  background-color: var(--color-primary);
+  box-shadow: 0rem 0 1rem rgba(0, 0, 0, 0.2);
+  z-index: 100;
+
+  @include media(phone-big) {
+    display: none;
+  }
+}
+
+.nav {
+  display: block;
+  width: 100%;
+  padding: 0 4rem;
+  height: 20vh;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  z-index: 10;
+
+  @include media(tab) {
+    height: 15rem;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-grey);
+
+  @include media(phone-big) {
+    min-height: 80vh;
+  }
+}
+
+.box-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 38vh;
+  width: 100%;
+}
+
+.box-container,
+.box-container:visited,
+.box-container:link {
+  display: block;
+  color: white;
+  padding: 1rem;
+  font-size: 1.6rem;
+  opacity: 0.5;
+  text-decoration: none;
+  transition: all 0.2s;
+
+  @include media(desktop-1360) {
+    font-size: 1.3rem;
+  }
+
+  @include media(tab-big) {
+    font-size: 1rem;
+  }
+
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    color: var(--color-primary);
+    opacity: 1;
+  }
+}
+
+.box-selected {
+  background-color: white;
+  color: var(--color-primary) !important;
+  opacity: 1 !important;
+}
+
+.box-content {
+  margin-left: 17%;
+
+  @include media(tab-med) {
+    margin-left: 10%;
+  }
+}
+.nav-content {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+}
+.section-remainder {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.section-search {
+  margin-left: auto;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 5rem;
+  padding: 2rem;
+  width: 95%;
+  overflow-x: auto;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.table {
+  display: table;
+  width: 100%;
+  overflow-x: auto;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 1rem;
+}
+
+td {
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.action-btns {
+  display: flex;
+}
+
+.tr {
+  display: table-row;
+}
+
+.th {
+  display: table-cell;
+  text-align: left;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.td {
+  display: table-cell;
+  padding: 1rem;
+}
+
+.poppup {
+  visibility: hidden;
+  position: fixed;
+  z-index: 1000;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.poppup-add-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  overflow: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 45rem;
+  height: 75vh;
+  z-index: 1005;
+  background-color: white;
+  border-radius: 1.5rem;
+}
+
+.dark-bg {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(#000000, 0.6);
+  z-index: 1000;
+}
+
+.poppup-sell {
+  top: 0;
+  left: 0;
+}
+
+.dark-bg-alt {
+  top: 0;
+}
+
+.non-scroll {
+  overflow: hidden;
+}
+
+.poppup-warning {
+  height: 40rem;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  color: var(--text-primary);
+}
+
+.loading-cursor {
+  cursor: progress;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.mobile-navbar {
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--color-primary);
+  min-width: 100vw;
+  height: 8rem;
+  color: white;
+
+  @include media(phone-big) {
+    visibility: visible;
+  }
+}
+
+.mobile-links-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.mobile-nav-link,
+.mobile-nav-link:link,
+.mobile-nav-link:visited {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 3rem;
+  font-size: 3rem;
+  opacity: 0.5;
+}
+
+.anker-style,
+.anker-style:visited,
+.anker-style:link {
+  text-decoration: none;
+  color: white;
+}
+
+.mobile-link-active {
+  opacity: 1;
+}

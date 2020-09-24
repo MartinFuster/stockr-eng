@@ -1,0 +1,177 @@
+:root {
+  --color-primary: #0044a9;
+  --color-green: #00a96f;
+  --color-grey: #f2f2f2;
+  --color-red: #b7053c;
+  --text-primary: rgb(90, 90, 90);
+  --text-secondary: rgb(71, 71, 71);
+}
+
+@mixin media($breakpoint) {
+  @if $breakpoint == desktop-small {
+    @media only screen and (max-width: 93.75em) {
+      @content;
+      //1500px
+    }
+  }
+
+  @if $breakpoint == desktop-1360 {
+    @media only screen and (max-width: 85em) {
+      @content;
+      //1360px
+    }
+  }
+
+  @if $breakpoint == desktop-1250 {
+    @media only screen and (max-width: 78.125em) {
+      @content;
+      //1250px
+    }
+  }
+
+  @if $breakpoint == tab-big {
+    @media only screen and (max-width: 75.3125em) {
+      @content;
+      //1205px
+    }
+  }
+
+  @if $breakpoint == tab-med {
+    @media only screen and (max-width: 65.3125em) {
+      @content;
+      //1045px
+    }
+  }
+
+  @if $breakpoint == tab-port-big {
+    @media only screen and (max-width: 61.9375em) {
+      @content;
+      //991px
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 60.375em) {
+      @content;
+      //966px
+    }
+  }
+
+  @if $breakpoint == tab {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+      //900px
+    }
+  }
+
+  @if $breakpoint == tab-small {
+    @media only screen and (max-width: 49.025em) {
+      @content;
+      //785px
+    }
+  }
+
+  @if $breakpoint == phone-big {
+    @media only screen and (max-width: 42.8125em) {
+      @content;
+      //685px
+    }
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+      //600px
+    }
+  }
+
+  @if $breakpoint == phone-medium {
+    @media only screen and (max-width: 31.25em) {
+      @content;
+      //500px
+    }
+  }
+
+  @if $breakpoint == phone-448 {
+    @media only screen and (max-width: 28em) {
+      @content;
+      //448px
+    }
+  }
+
+  @if $breakpoint == phone-415 {
+    @media only screen and (max-width: 25.9375em) {
+      @content;
+      //415px
+    }
+  }
+
+  @if $breakpoint == phone-370 {
+    @media only screen and (max-width: 23.125em) {
+      @content;
+      //370px
+    }
+  }
+
+  @if $breakpoint == phone-350 {
+    @media only screen and (max-width: 21.875em) {
+      @content;
+      //350px
+    }
+  }
+
+  @if $breakpoint == medium-big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+      //1800px
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 143.75em) {
+      @content;
+      //2300px
+    }
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  @include media(tab-port-big) {
+    font-size: 50%;
+  }
+
+  @include media(tab-small) {
+    font-size: 40%;
+  }
+
+  @include media(medium-big-desktop) {
+    font-size: 70%;
+  }
+
+  @include media(big-desktop) {
+    font-size: 100%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-repeat: no-repeat;
+  color: black;
+  overflow-x: hidden;
+}
