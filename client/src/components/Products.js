@@ -328,7 +328,7 @@ function Products() {
                     type="text"
                     name="costoCaja"
                     id="costoCaja"
-                    placeholder="Costo por caja"
+                    placeholder="Cost per Stack"
                     className={
                       touched.costoCaja && errors.costoCaja
                         ? "poppup-input has-error"
