@@ -283,7 +283,7 @@ function Products() {
                     type="text"
                     name="nombre"
                     id="nombre"
-                    placeholder="Nombre"
+                    placeholder="Name"
                     className={
                       touched.nombre && errors.nombre
                         ? "poppup-input has-error"
@@ -307,7 +307,7 @@ function Products() {
                     type="text"
                     name="cantidad"
                     id="cantidad"
-                    placeholder="Cantidad"
+                    placeholder="Quantity"
                     className={
                       touched.cantidad && errors.cantidad
                         ? "poppup-input has-error"
@@ -349,7 +349,7 @@ function Products() {
                     type="text"
                     name="costoUnitario"
                     id="costoUnitario"
-                    placeholder="Costo unitario"
+                    placeholder="Unitary Cost"
                     className={
                       touched.costoUnitario && errors.costoUnitario
                         ? "poppup-input has-error"
@@ -373,7 +373,7 @@ function Products() {
                     type="text"
                     name="precioCaja"
                     id="precioCaja"
-                    placeholder="Precio por caja"
+                    placeholder="Price per Stack"
                     className={
                       touched.precioCaja && errors.precioCaja
                         ? "poppup-input has-error"
@@ -397,7 +397,7 @@ function Products() {
                     type="text"
                     name="precioUnitario"
                     id="precioUnitario"
-                    placeholder="Precio unitario"
+                    placeholder="Unitary Price"
                     className={
                       touched.precioUnitario && errors.precioUnitario
                         ? "poppup-input has-error"
@@ -421,7 +421,7 @@ function Products() {
                     type="text"
                     name="precioParticular"
                     id="precioParticular"
-                    placeholder="Precio Particular"
+                    placeholder="Particular Price"
                     className={
                       touched.precioParticular && errors.precioParticular
                         ? "poppup-input has-error"

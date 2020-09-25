@@ -775,7 +775,7 @@ function ProductRow(props) {
                       type="text"
                       name="cantidadVendida"
                       id="cantidadVendida"
-                      placeholder="Cantidad Vendida"
+                      placeholder="Sold Quantity"
                       onChange={handleChange}
                       onBlur={handleBlur}
                       value={values.cantidadVendida}
